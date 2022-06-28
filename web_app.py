@@ -9,10 +9,10 @@ import matplotlib.pyplot as plt
 import tensorflow_hub as hub
 
 hide_streamlit_style = """
-
+            <style>
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
-
+            </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
@@ -52,7 +52,8 @@ def predict_class(image):
 
 
 footer = """
-a:link , a:visited{
+    <style>
+    a:link , a:visited{
     color: white;
     background-color: transparent;
     text-decoration: None;
@@ -73,8 +74,15 @@ a:hover,  a:active {
     color: black;
     text-align: center;
 }
+</style>
+<div class="footer">
+<p align="center"> <a href="https://www.linkedin.com/in/varsharoshan/">Developed by Varsha</a></p>
+</div>
+       
 """
 st.markdown(footer, unsafe_allow_html = True)
-if __name__ == '__main__': main()
+
+if __name__ == '__main__':
+            main()
 
 
