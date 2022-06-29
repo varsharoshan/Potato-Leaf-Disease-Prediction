@@ -1,2 +1,2 @@
 # Potato-Leaf-Disease-Prediction
-The model predicts early blight and late blight diseases in potato leaves
+An end to end ML project for predicting Potato leaf diseases, using CNN is developed and deployed using Heroku
